@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Christoph Oberthür</title>
+<meta name="description" content="Personal page of Christoph Oberthür, PhD candidate in Economics at the Paris School of Economics." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="minimal.css" />
+<script src="minimal-tweaks.js"></script>
+<style>
+  /* Home-only: center the content column under the centered identity block. */
+  body { text-align: center; }
+  .lede, .next-line, .foot {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lede { max-width: 32em; }
+  .next-line {
+    display: inline-block;
+    border-left: none;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 0.7rem 1.4rem;
+    background: transparent;
+    text-align: left;
+    max-width: 100%;
+  }
+  .foot { justify-content: center; }
+  .foot span { margin: 0 0.6rem; }
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="side">
+    <div class="avatar" aria-label="portrait of Christoph Oberthür"></div>
+    <p class="id-name">Christoph Oberthür</p>
+    <p class="id-role">PhD candidate, Economics</p>
+    <p class="id-aff">Paris School of Economics</p>
+    <ul class="links">
+      <li><a href="CV_Christoph_Oberthuer.pdf"><span class="arrow">↗</span>cv.pdf</a></li>
+      <li><a href="mailto:choberthur@mailbox.org"><span class="arrow">↗</span>email</a></li>
+      <li><a href="https://scholar.google.com/citations?user=jgpY2G8AAAAJ&hl=en"><span class="arrow">↗</span>google scholar</a></li>
+      <li><a href="https://github.com/s3chober"><span class="arrow">↗</span>github</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <nav class="topnav" aria-label="primary">
+      <a class="current"><span class="slash">/</span>home</a>
+      <a href="research.html"><span class="slash">/</span>research</a>
+      <a href="teaching.html"><span class="slash">/</span>teaching</a>
+      <a href="ai.html"><span class="slash">/</span>ai-workshop</a>
+    </nav>
+
+    <p class="lede" style="font-family: var(--sans); font-style: normal; font-weight: 500">Policy-oriented environmental economist working on trade, finance, and their interaction with nature.</p>
+
+    <p class="next-line">
+      <span class="next-label">Next</span> · LSE Environment Camp, London · ESCP Workshop on AI in Research, Turin · Alliance Summer School on Environmental Policy, Paris
+    </p>
+
+    <div class="foot">
+      <span>© <span class="yr">2026</span> Christoph Oberthür</span>
+      <span>Paris</span>
+    </div>
+  </main>
+
+</div>
+
+<script>
+  document.querySelectorAll('.yr').forEach(n => n.textContent = new Date().getFullYear());
+</script>
+
+</body>
+</html>

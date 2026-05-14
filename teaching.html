@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Teaching · Christoph Oberthür</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="minimal.css" />
+<script src="minimal-tweaks.js"></script>
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="side">
+    <div class="avatar" aria-label="portrait of Christoph Oberthür"></div>
+    <p class="id-name">Christoph Oberthür</p>
+    <p class="id-role">PhD candidate, Economics</p>
+    <p class="id-aff">Paris School of Economics</p>
+    <ul class="links">
+      <li><a href="CV_Christoph_Oberthuer.pdf"><span class="arrow">↗</span>cv.pdf</a></li>
+      <li><a href="mailto:choberthur@mailbox.org"><span class="arrow">↗</span>email</a></li>
+      <li><a href="https://scholar.google.com/citations?user=jgpY2G8AAAAJ&hl=en"><span class="arrow">↗</span>google scholar</a></li>
+      <li><a href="https://github.com/s3chober"><span class="arrow">↗</span>github</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <nav class="topnav" aria-label="primary">
+      <a href="index.html"><span class="slash">/</span>home</a>
+      <a href="research.html"><span class="slash">/</span>research</a>
+      <a class="current"><span class="slash">/</span>teaching</a>
+      <a href="ai.html"><span class="slash">/</span>ai-workshop</a>
+    </nav>
+
+    <h1>Teaching</h1>
+
+    <ul class="paper-list">
+      <li>
+        <span class="ptitle">Machine Learning</span>
+        <span class="pauthors">Teaching Assistant · Research Master · Paris School of Economics</span>
+        <span class="pdesc">Hands-on machine learning for empirical economics — supervised learning, regularization (Lasso/Ridge), cross-validation, tree-based methods, and recent causal-ML approaches (double machine learning, causal forests).</span>
+      </li>
+    </ul>
+
+
+    <div class="foot">
+      <span>© <span class="yr">2026</span> Christoph Oberthür</span>
+      <span>Paris</span>
+    </div>
+  </main>
+
+</div>
+
+<script>
+  document.querySelectorAll('.yr').forEach(n => n.textContent = new Date().getFullYear());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research · Christoph Oberthür</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="minimal.css" />
+<script src="minimal-tweaks.js"></script>
+<style>
+  .lulc-banner {
+    margin: 1.6rem 0 2.4rem;
+    aspect-ratio: 21 / 9;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #1a2418;
+    border: 1px solid var(--rule);
+    position: relative;
+  }
+  .lulc-banner canvas { display: block; width: 100%; height: 100%; }
+  .lulc-banner figcaption {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 0.5rem 0.85rem;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.78);
+    letter-spacing: 0.02em;
+    background: linear-gradient(180deg, transparent, rgba(0,0,0,0.55));
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+  @media (max-width: 520px) {
+    .lulc-banner { aspect-ratio: 16 / 10; }
+    .lulc-banner figcaption { font-size: 0.65rem; padding: 0.45rem 0.7rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="side">
+    <div class="avatar" aria-label="portrait of Christoph Oberthür"></div>
+    <p class="id-name">Christoph Oberthür</p>
+    <p class="id-role">PhD candidate, Economics</p>
+    <p class="id-aff">Paris School of Economics</p>
+    <ul class="links">
+      <li><a href="CV_Christoph_Oberthuer.pdf"><span class="arrow">↗</span>cv.pdf</a></li>
+      <li><a href="mailto:choberthur@mailbox.org"><span class="arrow">↗</span>email</a></li>
+      <li><a href="https://scholar.google.com/citations?user=jgpY2G8AAAAJ&hl=en"><span class="arrow">↗</span>google scholar</a></li>
+      <li><a href="https://github.com/s3chober"><span class="arrow">↗</span>github</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <nav class="topnav" aria-label="primary">
+      <a href="index.html"><span class="slash">/</span>home</a>
+      <a class="current"><span class="slash">/</span>research</a>
+      <a href="teaching.html"><span class="slash">/</span>teaching</a>
+      <a href="ai.html"><span class="slash">/</span>ai-workshop</a>
+    </nav>
+
+    <h1>Research</h1>
+
+    <p class="lede">
+      I study how trade and financial flows shape land use and ecosystems. My work pairs remote sensing data — on vegetation, land use, and biodiversity indicators — with economic data, leaning on quasi-experimental design and structural methods to separate cause from correlation.
+    </p>
+
+    <figure class="lulc-banner" id="lulc-banner" data-src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/145000/145988/yurimaguas_oli_2019191_lrg.jpg">
+      <canvas class="lulc-canvas"></canvas>
+    </figure>
+
+    <h2><span class="num">01</span>Working papers</h2>
+    <ul class="paper-list">
+      <li>
+        <span class="ptitle">Making a Difference? The Impact of Environmental NGO Campaigns on Deforestation in Brazil</span>
+        <span class="pauthors">C. Oberthür</span>
+        <span class="pmeta">working · 2026</span>
+      </li>
+      <li>
+        <span class="ptitle">The Impact of Data Centers on Bird Biodiversity across the US</span>
+        <span class="pauthors">with Michele Fioretti and Valentina Bosetti</span>
+        <span class="pmeta">working · 2026</span>
+      </li>
+    </ul>
+
+    <h2><span class="num">02</span>Work in progress</h2>
+    <ul class="paper-list">
+      <li>
+        <span class="ptitle">The Financial Costs of Due Diligence</span>
+        <span class="pauthors">with Lionel Fontagné, Jean-Stéphane Mésonnier, Clément Mazet-Sonilhac</span>
+        <span class="pmeta">in progress · 2026</span>
+      </li>
+    </ul>
+
+    <h2><span class="num">03</span>Replications</h2>
+    <ul class="paper-list">
+      <li>
+        <span class="ptitle">Replication of Hargrave &amp; Kis-Katos (2013)</span>
+        <span class="pauthors"><em>Economic Causes of Deforestation in the Brazilian Amazon: A Panel Data Analysis for the 2000s</em> — I4R Replication</span>
+        <span class="pmeta">2025</span>
+      </li>
+    </ul>
+
+    <h2><span class="num">04</span>Conferences</h2>
+    <div class="conf-cols">
+      <div>
+        <p class="sub" style="margin-top:0">Upcoming · 2026</p>
+        <ul>
+          <li>World Congress of Environmental and Resource Economists (WCERE), Lisbon</li>
+          <li>Society for Institutional &amp; Organisational Economics (SIOE), Fontainebleau</li>
+          <li>Forests &amp; People, Aussois</li>
+          <li>LSE Environment Camp, London</li>
+        </ul>
+      </div>
+      <div>
+        <p class="sub" style="margin-top:0">Past · 2026</p>
+        <ul>
+          <li>FAERE Doctoral Workshop, Annecy</li>
+          <li>Workshop on Deforestation, Geneva</li>
+          <li>Doctorissimes, Paris</li>
+          <li>PSE GPET Internal, Paris</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2><span class="num">05</span>Summer schools</h2>
+    <ul class="paper-list">
+      <li>
+        <span class="ptitle">Alliance Summer School on Environmental Policy, Paris</span>
+        <span class="pmeta">attending · 2026</span>
+      </li>
+    </ul>
+
+    <h2><span class="num">06</span>Background</h2>
+    <p>
+      Before the PhD I spent two years as a Research Analyst at the <strong>European Central Bank</strong>'s Financial Research Division, where I worked on <em><a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2921~603e225101.en.pdf">Business as Usual: Bank Climate Commitments, Lending, and Engagement</a></em>. Earlier, I was at the German Development Institute.
+    </p>
+
+
+    <div class="foot">
+      <span>© <span class="yr">2026</span> Christoph Oberthür</span>
+      <span>Paris</span>
+    </div>
+  </main>
+
+</div>
+
+<script>
+  document.querySelectorAll('.yr').forEach(n => n.textContent = new Date().getFullYear());
+
+  // Live "satellite → land-use classification" banner.
+  // Loads a Landsat scene and quantizes the right half to a MapBiomas-style
+  // palette, with a gradient blend across the seam. Falls back gracefully
+  // if CORS blocks pixel reads.
+  (function () {
+    var fig = document.getElementById('lulc-banner');
+    if (!fig) return;
+    var canvas = fig.querySelector('.lulc-canvas');
+    var ctx = canvas.getContext('2d');
+    var src = fig.getAttribute('data-src');
+
+    var PALETTE = [
+      [31, 141, 73],   // forest formation
+      [125, 201, 117], // savanna formation
+      [4, 56, 29],     // dense / mangrove
+      [255, 235, 175], // pasture
+      [214, 188, 116], // grassland
+      [232, 156, 92],  // crop / agriculture
+      [165, 110, 70],  // bare / cleared
+      [38, 115, 137]   // water
+    ];
+    function nearest(r, g, b) {
+      var best = PALETTE[0], bd = Infinity;
+      for (var i = 0; i < PALETTE.length; i++) {
+        var p = PALETTE[i];
+        var dr = r - p[0], dg = g - p[1], db = b - p[2];
+        var d = dr*dr + dg*dg + db*db;
+        if (d < bd) { bd = d; best = p; }
+      }
+      return best;
+    }
+
+    function render(img) {
+      var W = fig.clientWidth || 640;
+      var H = Math.round(W * 9 / 21);
+      canvas.width = W; canvas.height = H;
+
+      var ir = img.width / img.height, cr = W / H;
+      var sw, sh, sx, sy;
+      if (ir > cr) { sh = img.height; sw = sh * cr; sx = (img.width - sw) / 2; sy = 0; }
+      else        { sw = img.width;  sh = sw / cr; sx = 0; sy = (img.height - sh) / 2; }
+      ctx.drawImage(img, sx, sy, sw, sh, 0, 0, W, H);
+
+      try {
+        var px = 8;
+        var cols = Math.ceil(W / px), rows = Math.ceil(H / px);
+        var small = document.createElement('canvas');
+        small.width = cols; small.height = rows;
+        small.getContext('2d').drawImage(canvas, 0, 0, cols, rows);
+        var sd = small.getContext('2d').getImageData(0, 0, cols, rows).data;
+
+        var cl = document.createElement('canvas');
+        cl.width = W; cl.height = H;
+        var clx = cl.getContext('2d');
+        for (var y = 0; y < rows; y++) {
+          for (var x = 0; x < cols; x++) {
+            var i = (y * cols + x) * 4;
+            var col = nearest(sd[i], sd[i+1], sd[i+2]);
+            clx.fillStyle = 'rgb(' + col[0] + ',' + col[1] + ',' + col[2] + ')';
+            clx.fillRect(x * px, y * px, px, px);
+          }
+        }
+
+        var mask = document.createElement('canvas');
+        mask.width = W; mask.height = H;
+        var mctx = mask.getContext('2d');
+        mctx.drawImage(cl, 0, 0);
+        mctx.globalCompositeOperation = 'destination-in';
+        var grad = mctx.createLinearGradient(W * 0.35, 0, W * 0.7, 0);
+        grad.addColorStop(0, 'rgba(0,0,0,0)');
+        grad.addColorStop(1, 'rgba(0,0,0,1)');
+        mctx.fillStyle = grad;
+        mctx.fillRect(0, 0, W, H);
+        ctx.drawImage(mask, 0, 0);
+
+        ctx.fillStyle = 'rgba(255,255,255,0.18)';
+        ctx.fillRect(Math.round(W * 0.525), 0, 1, H);
+      } catch (e) { /* CORS — keep raw photo */ }
+    }
+
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function () { render(img); };
+    img.src = src;
+
+    // Redraw on resize so the banner stays sharp on layout changes
+    var rt;
+    window.addEventListener('resize', function () {
+      clearTimeout(rt);
+      rt = setTimeout(function () { if (img.complete) render(img); }, 120);
+    });
+  })();
+</script>
+
+</body>
+</html>
