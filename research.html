@@ -36,6 +36,19 @@
     .lulc-banner { aspect-ratio: 16 / 10; }
     .lulc-banner figcaption { font-size: 0.65rem; padding: 0.45rem 0.7rem; }
   }
+
+  /* fold-out abstract */
+  .paper-fold summary { cursor: pointer; list-style: none; display: block; }
+  .paper-fold summary::-webkit-details-marker { display: none; }
+  .paper-fold summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  .paper-fold summary:hover .ptitle { color: var(--accent); }
+  .fold-hint { font-family: var(--mono); font-size: 0.72rem; color: var(--accent-deep); letter-spacing: 0.04em; margin-left: 0.55em; white-space: nowrap; }
+  .fold-hint::before { content: "\25B8"; margin-right: 0.34em; display: inline-block; }
+  .paper-fold[open] .fold-hint::before { content: "\25BE"; }
+  .abstract-fold { margin: 0.8rem 0 0.1rem; padding-left: 0.95rem; border-left: 2px solid var(--accent); }
+  .abstract-fold p { font-size: 0.95rem; color: var(--ink-soft); margin: 0 0 0.7rem; line-height: 1.6; }
+  .abstract-fold .pdflink { display: inline-block; font-family: var(--mono); font-size: 0.75rem; text-decoration: none; color: var(--accent-deep); letter-spacing: 0.02em; margin-top: 0.1rem; }
+  .abstract-fold .pdflink:hover { color: var(--accent); }
 </style>
 </head>
 <body>
@@ -75,9 +88,18 @@
     <h2><span class="num">01</span>Working papers</h2>
     <ul class="paper-list">
       <li>
-        <span class="ptitle">Making a Difference? The Impact of Environmental NGO Campaigns on Deforestation in Brazil</span>
-        <span class="pauthors">C. Oberthür</span>
-        <span class="pmeta">working · 2026</span>
+        <details class="paper-fold">
+          <summary>
+            <span class="ptitle">Making a Difference? The Impact of Environmental NGO Campaigns on Deforestation in Brazil</span>
+            <span class="pauthors">C. Oberthür</span>
+            <span class="pmeta">working · 2026</span><span class="fold-hint">abstract</span>
+          </summary>
+          <div class="abstract-fold">
+            <p>This paper provides causal evidence that NGO campaigns influence land-use decisions in Brazil's soy and beef supply chains, two of the leading drivers of tropical deforestation globally. Using a shift-share design that exploits quasi-exogenous variation in campaign timing and firm–municipality trade linkages, I find that municipalities more exposed to targeted firms through trade linkages experience significantly less deforestation, with aggregate estimates implying a reduction of approximately 19% of total forest and savanna loss in the sample.</p>
+            <p>The effect operates primarily by deterring forest-to-cattle conversion. Campaigns also promote reallocation from cattle grazing to soy cultivation, indicating a shift toward more intensive and economically productive land uses, accompanied by measurable productivity gains. The results underscore the persistent influence of civil society in shaping environmental outcomes, and highlight the broader potential of reputational governance to complement state regulation in managing global environmental externalities.</p>
+            <a class="pdflink" href="Oberthur_Making_a_Difference.pdf">↓ Download PDF</a>
+          </div>
+        </details>
       </li>
       <li>
         <span class="ptitle">The Impact of Data Centers on Bird Biodiversity across the US</span>
@@ -95,16 +117,7 @@
       </li>
     </ul>
 
-    <h2><span class="num">03</span>Replications</h2>
-    <ul class="paper-list">
-      <li>
-        <span class="ptitle">Replication of Hargrave &amp; Kis-Katos (2013)</span>
-        <span class="pauthors"><em>Economic Causes of Deforestation in the Brazilian Amazon: A Panel Data Analysis for the 2000s</em> — I4R Replication</span>
-        <span class="pmeta">2025</span>
-      </li>
-    </ul>
-
-    <h2><span class="num">04</span>Conferences</h2>
+    <h2><span class="num">03</span>Conferences</h2>
     <div class="conf-cols">
       <div>
         <p class="sub" style="margin-top:0">Upcoming · 2026</p>
@@ -126,15 +139,19 @@
       </div>
     </div>
 
-    <h2><span class="num">05</span>Summer schools</h2>
+    <h2><span class="num">04</span>Summer schools</h2>
     <ul class="paper-list">
       <li>
         <span class="ptitle">Alliance Summer School on Environmental Policy, Paris</span>
         <span class="pmeta">attending · 2026</span>
       </li>
+      <li>
+        <span class="ptitle">AI &amp; Economics, ETH Zurich &amp; University of Zurich</span>
+        <span class="pmeta">attending · 2026</span>
+      </li>
     </ul>
 
-    <h2><span class="num">06</span>Background</h2>
+    <h2><span class="num">05</span>Background</h2>
     <p>
       Before the PhD I spent two years as a Research Analyst at the <strong>European Central Bank</strong>'s Financial Research Division, where I worked on <em><a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2921~603e225101.en.pdf">Business as Usual: Bank Climate Commitments, Lending, and Engagement</a></em>. Earlier, I was at the German Development Institute.
     </p>
